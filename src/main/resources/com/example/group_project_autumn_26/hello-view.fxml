@@ -8,7 +8,7 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.group_project_autumn_26.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="21.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="25.0" top="25.0"/>
     </padding>
 
     <Label fx:id="welcomeText"/>
