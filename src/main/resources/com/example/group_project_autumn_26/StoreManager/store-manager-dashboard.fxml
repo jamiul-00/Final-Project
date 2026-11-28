@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="690.0"
+      spacing="18.0"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.StoreManager.Controller.DashboardController">
+
+    <Label text="Store Manager Dashboard"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Button text="View Store Inventory"
+            onAction="#viewStoreInventory" prefWidth="250"/>
+
+    <Button text="Search Product"
+            onAction="#searchProduct" prefWidth="250"/>
+
+    <Button text="Add Product"
+            onAction="#addProduct" prefWidth="250"/>
+
+    <Button text="Update Product"
+            onAction="#updateProduct" prefWidth="250"/>
+
+    <Button text="Add Stock"
+            onAction="#addStock" prefWidth="250"/>
+
+</VBox>
