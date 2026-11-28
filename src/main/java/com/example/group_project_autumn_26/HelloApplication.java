@@ -18,7 +18,7 @@ public class HelloApplication extends Application {
 
         Scene scene = new Scene(fxmlLoader.load(), 850, 500);
 
-        stage.setTitle("Welcome User !");
+        stage.setTitle("Group Project Management System");
         stage.setScene(scene);
         stage.show();
     }
