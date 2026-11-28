@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane blendMode="DARKEN" prefHeight="613.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group_project_autumn_26.CustomerCartController">
    <children>
       <Label layoutX="300.0" layoutY="14.0" prefHeight="17.0" prefWidth="144.0" text="Bata Shoe Customer Cart" textFill="#e10707" wrapText="true">
@@ -16,7 +15,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Button layoutX="533.0" layoutY="48.0" mnemonicParsing="false" text="Back To Dashboard">
+      <Button layoutX="533.0" layoutY="48.0" mnemonicParsing="false" onAction="#backToDashboardButtonOA" text="Back To Dashboard">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -24,11 +23,11 @@
       <TableView fx:id="myCartTableView" layoutX="120.0" layoutY="131.0" prefHeight="239.0" prefWidth="487.0">
         <columns>
           <TableColumn fx:id="idTC" prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="86.0" text="Shoe Name" />
-            <TableColumn prefWidth="78.0" text="Category" />
-            <TableColumn text="Size" />
-            <TableColumn prefWidth="84.0" text="Quantity" />
-            <TableColumn prefWidth="87.0" text="Price" />
+          <TableColumn fx:id="shoeNameTC" prefWidth="86.0" text="Shoe Name" />
+            <TableColumn fx:id="categoryTC" prefWidth="78.0" text="Category" />
+            <TableColumn fx:id="sizeTC" text="Size" />
+            <TableColumn fx:id="quantityTC" prefWidth="84.0" text="Quantity" />
+            <TableColumn fx:id="priceTC" prefWidth="87.0" text="Price" />
         </columns>
       </TableView>
       <Label layoutX="328.0" layoutY="106.0" prefHeight="17.0" prefWidth="144.0" text="My Cart Items" textFill="#e10707" wrapText="true">
@@ -36,7 +35,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Button layoutX="549.0" layoutY="391.0" mnemonicParsing="false" text="Remove Selected Items ">
+      <Button layoutX="549.0" layoutY="391.0" mnemonicParsing="false" onAction="#removeSelectedItemsOA" text="Remove Selected Items ">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -56,10 +55,10 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Label>
-      <Text fill="#e10505" layoutX="163.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="96.0" />
-      <Text fontSmoothingType="LCD" layoutX="173.0" layoutY="454.0" stroke="#d00d0d" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.0" />
-      <Text fill="#e10505" layoutX="462.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="158.0" />
-      <Button layoutX="283.0" layoutY="507.0" mnemonicParsing="false" text="Confirm Order " textAlignment="RIGHT">
+      <Text fx:id="totalAmountText" fill="#e10505" layoutX="163.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="96.0" />
+      <Text fx:id="shippingAddresssText" fontSmoothingType="LCD" layoutX="173.0" layoutY="454.0" stroke="#d00d0d" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="172.0" />
+      <Text fx:id="phoneNumberText" fill="#e10505" layoutX="462.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="158.0" />
+      <Button layoutX="283.0" layoutY="507.0" mnemonicParsing="false" onAction="#confirmOrderButtonOA" text="Confirm Order " textAlignment="RIGHT">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
