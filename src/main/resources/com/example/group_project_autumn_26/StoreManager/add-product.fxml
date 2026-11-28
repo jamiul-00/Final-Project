@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="12"
+      prefWidth="600" prefHeight="550"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.StoreManager.Controller.AddProductController">
+
+    <Label text="Add New Product"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="productIdField"
+               promptText="Product ID" maxWidth="300"/>
+
+    <TextField fx:id="productNameField"
+               promptText="Product Name" maxWidth="300"/>
+
+    <TextField fx:id="sizeField"
+               promptText="Size" maxWidth="300"/>
+
+    <TextField fx:id="priceField"
+               promptText="Price" maxWidth="300"/>
+
+    <TextField fx:id="quantityField"
+               promptText="Quantity" maxWidth="300"/>
+
+    <Button text="Add Product"
+            onAction="#addProduct"/>
+
+    <Label fx:id="messageLabel" text=""/>
+
+    <Button text="Back to Dashboard"
+            onAction="#backToDashboard"/>
+
+</VBox>

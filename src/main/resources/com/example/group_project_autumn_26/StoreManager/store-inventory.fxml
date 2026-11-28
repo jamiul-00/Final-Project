@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15"
+      prefWidth="850" prefHeight="550"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.StoreManager.Controller.StoreInventoryController">
+
+    <Label text="Store Inventory"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <TableView fx:id="productTable"
+               prefWidth="800" prefHeight="380">
+
+        <columns>
+            <TableColumn fx:id="productIdColumn"
+                         text="Product ID" prefWidth="130"/>
+
+            <TableColumn fx:id="productNameColumn"
+                         text="Product Name" prefWidth="200"/>
+
+            <TableColumn fx:id="sizeColumn"
+                         text="Size" prefWidth="130"/>
+
+            <TableColumn fx:id="priceColumn"
+                         text="Price" prefWidth="150"/>
+
+            <TableColumn fx:id="quantityColumn"
+                         text="Quantity" prefWidth="150"/>
+        </columns>
+
+    </TableView>
+
+    <Button text="Back to Dashboard"
+            onAction="#backToDashboard"/>
+
+</VBox>

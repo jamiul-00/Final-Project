@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" prefWidth="600" prefHeight="550"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.DeliveryOfficer.Controller.DeliveryDetailsController">
+
+    <Label text="View Delivery Details"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="searchDeliveryIdField"
+               promptText="Enter Delivery ID" maxWidth="250"/>
+
+    <Button text="Find Delivery" onAction="#findDelivery"/>
+
+    <Label text="Delivery ID:"/>
+    <Label fx:id="deliveryIdLabel" text="-"/>
+
+    <Label text="Order ID:"/>
+    <Label fx:id="orderIdLabel" text="-"/>
+
+    <Label text="Officer ID:"/>
+    <Label fx:id="officerIdLabel" text="-"/>
+
+    <Label text="Receiver Name:"/>
+    <Label fx:id="receiverNameLabel" text="-"/>
+
+    <Label text="Delivery Date:"/>
+    <Label fx:id="deliveryDateLabel" text="-"/>
+
+    <Label text="Delivery Status:"/>
+    <Label fx:id="deliveryStatusLabel" text="-"/>
+
+    <Label text="Failure Reason:"/>
+    <Label fx:id="failureReasonLabel" text="-"/>
+
+    <Button text="Back to Dashboard" onAction="#backToDashboard"/>
+
+</VBox>

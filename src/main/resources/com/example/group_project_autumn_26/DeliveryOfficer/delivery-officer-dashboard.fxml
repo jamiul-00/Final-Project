@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="690.0" spacing="18.0"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.DeliveryOfficer.Controller.DashboardController">
+
+    <Label text="Delivery Officer Dashboard"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <Button text="View Assigned Deliveries"
+            onAction="#viewAssignedDeliveries" prefWidth="250"/>
+
+    <Button text="View Delivery Details"
+            onAction="#viewDeliveryDetails" prefWidth="250"/>
+
+    <Button text="Update Delivery Status"
+            onAction="#updateDeliveryStatus" prefWidth="250"/>
+
+    <Button text="Confirm Delivery"
+            onAction="#confirmDelivery" prefWidth="250"/>
+
+    <Button text="Report Failed Delivery"
+            onAction="#reportFailedDelivery" prefWidth="250"/>
+
+</VBox>

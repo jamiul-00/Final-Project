@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" prefWidth="750" prefHeight="600"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.DeliveryOfficer.Controller.AssignedDeliveriesController">
+
+    <Label text="View Assigned Deliveries"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="deliveryIdField" promptText="Delivery ID" maxWidth="300"/>
+    <TextField fx:id="orderIdField" promptText="Order ID" maxWidth="300"/>
+    <TextField fx:id="deliveryStatusField" promptText="Delivery Status" maxWidth="300"/>
+    <TextField fx:id="receiverNameField" promptText="Receiver Name" maxWidth="300"/>
+    <TextField fx:id="deliveryDateField" promptText="Delivery Date (YYYY-MM-DD)" maxWidth="300"/>
+
+    <Button text="Add Delivery" onAction="#addDelivery"/>
+
+    <TableView fx:id="deliveryTable" prefHeight="250" prefWidth="650">
+        <columns>
+            <TableColumn fx:id="deliveryIdColumn" text="Delivery ID" prefWidth="180"/>
+            <TableColumn fx:id="orderIdColumn" text="Order ID" prefWidth="180"/>
+            <TableColumn fx:id="deliveryStatusColumn" text="Delivery Status" prefWidth="250"/>
+        </columns>
+    </TableView>
+
+    <Button text="Back to Dashboard" onAction="#backToDashboard"/>
+
+</VBox>

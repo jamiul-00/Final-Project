@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+<VBox alignment="CENTER"
+      prefHeight="500.0"
+      prefWidth="850.0"
+      spacing="25.0"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.example.group_project_autumn_26.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="25.0" top="25.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label text="Simulating Operations of Bata Shoe Company."
+           style="-fx-font-size: 25px; -fx-font-weight: bold;"/>
+
+    <Label text="Select User Type"
+           style="-fx-font-size: 18px;"/>
+
+    <Button text="Delivery Officer"
+            onAction="#openDeliveryOfficer"
+            prefWidth="250.0"
+            prefHeight="45.0"/>
+
+    <Button text="Store Manager"
+            onAction="#openStoreManager"
+            prefWidth="250.0"
+            prefHeight="45.0"/>
+
 </VBox>

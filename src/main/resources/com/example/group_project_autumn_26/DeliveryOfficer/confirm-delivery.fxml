@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="12" prefWidth="600" prefHeight="450"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.DeliveryOfficer.Controller.ConfirmDeliveryController">
+
+    <Label text="Confirm Delivery"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="deliveryIdField"
+               promptText="Enter Delivery ID" maxWidth="250"/>
+
+    <Button text="Find Delivery" onAction="#findDelivery"/>
+
+    <Label text="Order ID:"/>
+    <Label fx:id="orderIdLabel" text="-"/>
+
+    <Label text="Current Status:"/>
+    <Label fx:id="currentStatusLabel" text="-"/>
+
+    <TextField fx:id="receiverNameField"
+               promptText="Receiver Name" maxWidth="250"/>
+
+    <Button text="Confirm Delivery" onAction="#confirmDelivery"/>
+
+    <Label fx:id="messageLabel" text=""/>
+
+    <Button text="Back to Dashboard" onAction="#backToDashboard"/>
+
+</VBox>

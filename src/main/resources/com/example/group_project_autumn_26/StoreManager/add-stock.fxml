@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="12"
+      prefWidth="600" prefHeight="500"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group_project_autumn_26.StoreManager.Controller.AddStockController">
+
+    <Label text="Add Stock"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="productIdField"
+               promptText="Enter Product ID" maxWidth="300"/>
+
+    <Button text="Find Product"
+            onAction="#findProduct"/>
+
+    <Label text="Product Name:"/>
+    <Label fx:id="productNameLabel" text="-"/>
+
+    <Label text="Current Quantity:"/>
+    <Label fx:id="currentQuantityLabel" text="-"/>
+
+    <TextField fx:id="receivedQuantityField"
+               promptText="Enter Received Quantity" maxWidth="300"/>
+
+    <Button text="Add Stock"
+            onAction="#addStock"/>
+
+    <Label text="Updated Quantity:"/>
+    <Label fx:id="updatedQuantityLabel" text="-"/>
+
+    <Label fx:id="messageLabel" text=""/>
+
+    <Button text="Back to Dashboard"
+            onAction="#backToDashboard"/>
+
+</VBox>
